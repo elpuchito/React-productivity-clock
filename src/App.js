@@ -117,7 +117,7 @@ const App = () => {
           <i className="material-icons">play_circle_filled</i>
         )}
       </button>
-      <button className="btn-small light-blue lighten-3">
+      <button className="btn-small grey darken-4">
         <i className="material-icons" onClick={() => reset()}>
           autorenew
         </i>
@@ -132,14 +132,14 @@ function Duration({ title, changeTime, type, time, formatTime }) {
       <h4>{title}</h4>
       <div className="time-sets">
         <button
-          className="btn-small light-blue lighten-3"
+          className="btn-small grey darken-4"
           onClick={() => changeTime(-60, type)}
         >
           <i className="material-icons">arrow_downward</i>
         </button>
         <h4>{formatTime(time)}</h4>
         <button
-          className="btn-small light-blue lighten-3"
+          className="btn-small grey darken-4"
           onClick={() => changeTime(60, type)}
         >
           <i className="material-icons">arrow_upward</i>
