@@ -87,7 +87,7 @@ const App = () => {
 
   return (
     <div className="center-align">
-      <h1>Oscar Dario's Productivity clock</h1>
+      <h2>Oscar Dario's Productivity clock</h2>
       <div className="dual-container">
         <Duration
           title={"break duration"}
@@ -104,9 +104,9 @@ const App = () => {
           formatTime={formatTime}
         ></Duration>
       </div>
-      <h3>{onBreak ? "We're on break" : "We're on session"}</h3>
+      <h4>{onBreak ? "We're on break" : "We're on session"}</h4>
 
-      <h1>{formatTime(displayTinme)}</h1>
+      <h2>{formatTime(displayTinme)}</h2>
       <button
         className="btn-small light-blue lighten-3"
         onClick={() => controlTime()}
@@ -129,7 +129,7 @@ const App = () => {
 function Duration({ title, changeTime, type, time, formatTime }) {
   return (
     <div className="">
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <div className="time-sets">
         <button
           className="btn-small light-blue lighten-3"
@@ -137,7 +137,7 @@ function Duration({ title, changeTime, type, time, formatTime }) {
         >
           <i className="material-icons">arrow_downward</i>
         </button>
-        <h3>{formatTime(time)}</h3>
+        <h4>{formatTime(time)}</h4>
         <button
           className="btn-small light-blue lighten-3"
           onClick={() => changeTime(60, type)}
